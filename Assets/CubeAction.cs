@@ -31,7 +31,7 @@ public class CubeAction : MonoBehaviour
             cubeRenderer.material.color = Color.Lerp(cubeRenderer.material.color, growColor, currentLerpTime);
 
             // 스케일이 5 이상이면 더 이상 커지지 않게 하고, 줄어들도록 설정
-            if (transform.localScale.x >= 5f && transform.localScale.y >= 5f && transform.localScale.z >= 5f)
+            if (transform.localScale.x >= 3f && transform.localScale.y >= 3f && transform.localScale.z >= 3f)
             {
                 isGrowing = false;  // 커지는 상태에서 줄어드는 상태로 변경
                 currentLerpTime = 0f;  // 색상 전환을 위한 타이머 초기화
